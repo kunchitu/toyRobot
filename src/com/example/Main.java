@@ -20,7 +20,7 @@ public class Main {
             } else if (line.equals("RIGHT")) {
                 robot.right();
             } else if (line.equals("REPORT")) {
-                robot.report();
+                System.out.println(robot.report());
             } else {
                 System.out.println("Invalid input");
             }

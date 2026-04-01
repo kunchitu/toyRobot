@@ -34,8 +34,9 @@ public class Robot {
         return x >= 0 && x < MAX && y >= 0 && y < MAX;
     }
 
-    public void report() {
-        if (isPlaced) System.out.println("X: " + this.x + "| Y: " + this.y + "| DIR: " + this.dir);
+    public String report() {
+        if (isPlaced) return "X: " + this.x + "| Y: " + this.y + "| DIR: " + this.dir;
+        return null;
     }
 
     public void move() {
@@ -61,5 +62,21 @@ public class Robot {
 
     public void right() {
         if (isPlaced) this.dir = Direction.valueOf(this.dir.right());
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public boolean getIsPlaced() {
+        return isPlaced;
+    }
+
+    public Direction getDir() {
+        return dir;
     }
 }
