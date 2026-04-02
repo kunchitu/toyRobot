@@ -21,6 +21,8 @@ public class Main {
                 robot.right();
             } else if (line.equals("REPORT")) {
                 System.out.println(robot.report());
+            } else if (line.equals("EXIT")) {
+                break;
             } else {
                 System.out.println("Invalid input");
             }
